@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="image/logo.png" alt="" width="60px" height="50px">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>205 Road Ballalbagh Mangalore,INDIA</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <h1>Relax</h1>
+
+        </div>
+
+        <ul class="nav-menu">
+          <li id="Home"> <a href="index.html">Home</a> </li>
+          <li> <a href="index.html">about</a> </li>
+          <li> <a href="index.html">Facilities</a> </li>
+          <li> <a href="index.html">room</a> </li>
+          <li> <a href="index.html">services</a> </li>
+          <li> <a href="index.html">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+91 8496901643</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+  <br>
+<div class="contact-form">
+   
+    <form name="myform2" class="input-fields">
+      
+        <h3>Having Questions?</h3>
+        <div class="formitem">
+          <div>
+  
+            <label for="Name">Name</label>
+            <input type="text" class="input" placeholder="Name" name="Name">
+            
+          </div>
+        </div>
+      
+  
+          <div class="formitem"> 
+            <div>
+              <label for="Email">Email</label>
+              <input type="text" class="input" placeholder="Email Address" name="Email">
+         
+            </div>
+          </div>
+            <div class="formitem">
+              <div>
+                <label for="Phone">Phone</label>
+                <input type="text" class="input" placeholder="Phone" name="Phone">
+
+              </div>
+           
+          </div>
+        
+          <div class="formitem">
+          <div>
+            <label for="Message"  id="msglabel">Message</label>
+            <textarea placeholder="Message"></textarea>
+          </div>
+          </div>
+  
+
+         
+<div class="formitem">
+
+    <div onclick="submitfeedback()" class ="formbtn" name="submit2">submit</div>
+  </div>
+  <br>
+  
+        
+  
+    </div>
+</div>
+<br>
+
+<script src="./js/"></script>
+<footer>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <h3>RELAX RESTURENT</h3>
+
+          </div>
+          <p>Welcome to hospitality </p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+
+            <li><i class="fas fa-angle-double-right"></i>Reservation</li>
+            <li><i class="fas fa-angle-double-right"></i>Gift cards</li>
+            <li><i class="fas fa-angle-double-right"></i>Contact</li>
+          </ul>
+        </div>
+
+
+
+        <div class="box">
+          <h2>Having Questions?</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>205 Road Ballalbagh Managalore,INDIA</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 8496901643</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>relaxbook@relax.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
